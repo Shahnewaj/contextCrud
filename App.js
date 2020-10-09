@@ -9,13 +9,13 @@ import {
   AppState,
 } from 'react-native';
 import AppStack from './navigation/AppNavigation';
-import {BlogProvider} from './src/context/BlogContext';
+import {Provider} from './src/context/BlogContext';
 const App = () => {
   return (
     <>
-      <BlogProvider>
+      <Provider>
         <AppStack />
-      </BlogProvider>
+      </Provider>
     </>
   );
 };
